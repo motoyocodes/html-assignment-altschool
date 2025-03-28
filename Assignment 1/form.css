@@ -8,5 +8,404 @@ body{
     padding: 0;
     margin: 0;
     background-color: #fff;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+
 
 }
+
+header{
+    display: flex;
+    justify-content: end;
+    padding-top: 24px;
+    margin-right: 25px;
+}
+
+header p{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+header span{
+    color: #0367F2;
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+#right,
+ #left{
+    padding: 0 32px;
+    
+}
+
+#left{
+    margin-top: 68px;
+    margin-left: 75px;
+    margin-right: 60px;
+
+
+}
+
+#left .main-image{
+    width: 467px;
+    margin-bottom: 50px;
+
+}
+
+ h1{
+    font-size: 38px;
+    text-align: center;
+    max-width: 500px;
+    color: #1a202C;
+    line-height: 50px;
+    margin-left: -18px;
+    margin-bottom: 60px;
+}
+
+
+#left .icons{
+    display: flex;
+    justify-content: center;
+    column-gap: 6px;
+    margin-bottom: 35px;
+
+}
+
+.icons i{
+    border-radius: 100px;
+    color: #0367F2;
+}
+
+
+.icons .x-icon{
+    margin-top: 2px;
+    color: #0367F2;
+
+}
+
+#right{
+    max-width: 650px;
+}
+
+#right h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    color: #1a202C;
+}
+
+#right p{
+    color: #718096;
+    margin-bottom: 40px;
+}
+
+
+.input-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.input-container .input-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field input,
+.form-select,
+.password input {
+    width: 202.5;
+    padding: 0 16px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.input-field label,
+.password label{
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+
+.input::placeholder,
+.password::placeholder{
+    color: #718096;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.dob-input,
+.select-option select,
+.select-option option{
+    font-size: 15px; 
+    color: #1a202C;
+    font-weight: 600;
+}
+
+.password{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.how{
+    width: 200px;
+}
+
+
+.how label{
+    font-size: 15px;
+    display: block;
+    padding-bottom: 10px;
+
+
+}
+
+
+.how input{
+    height: 40px;
+    width: 590px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 40px;
+
+}
+
+.how input::placeholder{
+    padding-left: 15px;
+}
+
+.click{
+    line-height: 25px;
+    font-size: 17px;
+}
+
+.click a {
+    text-decoration: none;
+    color: #0367F2;
+}
+
+.signup-btn{
+    height: 50px;
+    width: 590px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #0367F2;
+    color: #fff;
+    font-size: 14px;
+
+}
+
+#left .copy{
+    text-align: center;
+    font-weight: bold;
+    color: #1a202C;
+}
+
+.eye{
+    position: absolute;
+    top: 42px;
+    right: 15px;
+    font-size: 14px;
+    color: #718096;
+
+}
+
+.right-arrow{
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 600px) {
+    header{
+        display: flex;
+        justify-content: center;
+        padding-top: 34px;
+        margin-right: 0;
+    }
+    
+    header p{
+        font-size: 16px;
+    }
+
+    #left{
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        display: none;
+    
+    }
+    
+    #left .main-image{
+        width: 0;
+        margin-bottom: 0;
+        display: none;
+    
+    }
+    
+    #right{
+        max-width: 400px;
+        padding: 0 30px;
+    }
+    
+    #right h1{
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        text-align: start;
+        
+    }
+    
+    #right p{
+        color: #718096;
+        margin-bottom: 40px;
+        width: 300px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
+    
+    .input-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        max-width: unset;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    
+    .input-container .input-field{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .input-field input,
+    .form-select,
+    .password input {
+        width: 100%;
+        padding: 0 16px;
+        height: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    
+    .input-field label,
+    .password label{
+        margin-bottom: 12px;
+        font-size: 15px;
+    }
+    
+    
+    .input::placeholder,
+    .password::placeholder{
+        color: #718096;
+        font-weight: bold;
+        font-size: 14px;
+    
+    }
+    
+    .dob-input,
+    .select-option select,
+    .select-option option{
+        font-size: 15px; 
+        color: #1a202C;
+        font-weight: 600;
+    }
+    
+    .password{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        
+    }
+    
+    .how{
+        width: 200px;
+    }
+    
+    
+    .how label{
+        font-size: 15px;
+        display: block;
+        padding-bottom: 10px;
+    
+    
+    }
+    
+    
+    .how input{
+        height: 40px;
+        width: 590px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-bottom: 40px;
+    
+    }
+    
+    .how input::placeholder{
+        padding-left: 15px;
+    }
+    
+    .click{
+        line-height: 25px;
+        font-size: 17px;
+    }
+    
+    .click a {
+        text-decoration: none;
+        color: #0367F2;
+    }
+    
+    .signup-btn{
+        height: 50px;
+        width: 590px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: #0367F2;
+        color: #fff;
+        font-size: 14px;
+    
+    }
+    
+    #left .copy{
+        text-align: center;
+        font-weight: bold;
+        color: #1a202C;
+    }
+    
+    .eye{
+        position: absolute;
+        top: 42px;
+        right: 15px;
+        font-size: 14px;
+        color: #718096;
+    
+    }
+    
+    .right-arrow{
+        margin-left: 5px;
+        font-size: 12px;
+    }
+} 
+
